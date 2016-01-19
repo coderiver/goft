@@ -25,5 +25,8 @@ return new Za.prototype.init(a,b,c,d,e)}m.Tween=Za,Za.prototype={constructor:Za,
 $(document).ready(function() {
 
 	// go js
-
+	$('.gallery__thumbs div').click(function(event) {
+		newlink = $(this).data('pic');
+		$('.gallery__main img').attr('src',newlink);
+	});
 });

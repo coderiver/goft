@@ -1,0 +1,52 @@
+.single
+	+clr
+	&__left
+		width: 40% 
+		float: left
+		+r(640)
+			width: auto
+			float: none
+			margin-bottom: 30px 
+	&__right
+		overflow: hidden
+		font-size: 12px 
+		color: #777777 
+		+r(640)
+			margin: 0 15px 
+	&__title,h2
+		font-size: 20px 
+		text-transform: uppercase
+		font-weight: normal
+		margin-bottom: 5px 
+		color: #000000 
+	&__order
+		border-top: 1px solid #ddd 
+		border-bottom: 1px solid #ddd 
+		padding: 14px 0
+		+clr
+		margin: 7px 0 
+	&__price
+		float: left
+		font-size: 20px 
+		color: #777777 
+	&__action
+		float: right
+		text-decoration: none
+		color: #8a040a 
+		font-size: 20px 
+		margin-right: 8px 
+
+.gallery
+	text-align: center
+	&__thumbs
+		margin-top: 30px 
+		&>div
+			width: 60px 
+			height: 60px 
+			background-size: contain 
+			background-position: 50% 50%
+			background-repeat: no-repeat  
+			border: 1px solid #bbb 
+			margin-right: 14px 
+			display: inline-block
+			cursor: pointer

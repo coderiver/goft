@@ -1,0 +1,122 @@
+.header
+	background: url(../img/header-top.png) no-repeat 50% 0
+	position: relative
+	margin-bottom: 28px 
+	+r(720)
+		background: none 
+		&:before
+			position: absolute
+			top: 0
+			left: 0
+			content: "" 
+			width: 100%
+			background: #dddddd    
+			height: 26px 
+	+r(444)
+		&:before
+			display: none
+	&__motto
+		position: absolute
+		left: 0
+		top: 80px  
+		font-size: 22px 
+		color: #8b8b8b 
+		left: 10px 
+		+font
+		+r(720)
+			display: none
+	&__leftnav,&__rightnav
+		position: absolute
+		left: 0
+		top: 0
+		font-size: 12px   
+		text-transform: uppercase
+		color: #000 
+		height: 26px 
+		line-height: 26px 
+		left: 10px
+		+r(444) 
+			position: static
+			text-align: center
+			background: #dddddd 
+		a
+			text-decoration: none
+			color: #000 
+			margin: 0 4px
+			&:hover
+				text-decoration: underline
+	&__rightnav	
+		left: auto
+		right: 10px 
+	&__in
+		position: relative
+		height: 176px 
+		text-align: center
+		+r(720)
+			height: auto
+	&__logo
+		+s(logo)
+		+hidetext
+		display: inline-block
+		vertical-align: top
+		margin-top: 33px 
+		+r(720)
+			display: none
+			
+	&__sublogo
+		text-align: center
+		overflow: hidden
+		margin-top: 13px 
+		+r(720)
+			margin-top: 0
+			padding-top: 40px  
+			text-align: left
+		+r(444)
+			padding-top: 15px 
+		.header__goft
+			+s(goft)
+			display: inline-block
+			margin: 0 27px
+			vertical-align: top
+			+r(720)
+				margin: 0 15px 
+		&left
+			+s(logo-left)
+			display: inline-block
+			position: relative
+			+r(720)	
+				display: none
+			&:before
+				content: ""
+				position: absolute
+				right: 100%
+				top: 13px 
+				margin-right: 1px 
+				border-top: 1px solid #dddddd   
+				width: 1000px 
+		&right
+			+s(logo-right)
+			display: inline-block
+			position: relative
+			+r(720)
+				display: none
+			&:before
+				content: ""
+				position: absolute
+				left: 100%
+				top: 13px 
+				margin-left: 1px 
+				border-top: 1px solid #dddddd   
+				width: 1000px 
+
+.nav
+	text-align: center
+	font-size: 14px 
+	text-transform: uppercase
+	margin-top: 14px 
+	a
+		color: #000 
+		text-decoration: none
+		margin: 0 7px  
+		&:hover
+			text-decoration: underline

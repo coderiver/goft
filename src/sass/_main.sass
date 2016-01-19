@@ -1,1 +1,304 @@
 // Normally mainpage styles
++font(engr, engr)
+=font
+	font-family: "engr", Arial, sans-serif
+body
+	font-family: "Myriad Pro",Arial, sans-serif
+	font-size: 14px
+	line-height: 1.3
+.out
+	max-width: 940px  
+	margin: 0 auto 
+.text
+	margin: 0 167px
+	font-size: 12px 
+	color: #777777 
+	+r(600)
+		margin: 0 
+	&__item
+		position: relative
+		margin-bottom: 54px 
+		+r(600)
+			margin: 0 15px 
+			margin-bottom: 50px 
+		img
+			+r(400)
+				display: block
+				float: none !important
+				margin-bottom: 10px !important
+		&.is-left
+			img
+				position: absolute
+				left: -167px 
+				+r(600)
+					position: static
+					float: left
+					margin-right: 20px 
+				+r(400)
+					margin: 0 auto 
+		&.is-right
+			h2,p
+				text-align: right
+				+r(400)
+					text-align: left
+			img
+				position: absolute
+				right: -167px 
+				+r(600)
+					position: static
+					float: right
+					margin-left: 20px 
+				+r(400)
+					margin: 0 auto 
+	p
+		
+		margin-bottom: 1em 
+	h2
+		font-size: 20px 
+		font-weight: normal
+		color: #000000 
+		padding-bottom: 14px 
+		margin-bottom: 13px 
+		border-bottom: 1px solid #ddd 
+.order
+	@extend .contacts
+	text-align: center
+	form
+		+r(620)
+			margin: 0 15px 
+	.field
+		margin-bottom: 18px 
+	label
+		display: block
+		text-align: center
+		font-size: 14px 
+		color: #000000 
+	input[type=text],textarea
+		background: #eee 
+		padding: 6px 15px
+		line-height: normal 
+		height: 40px
+		display: block
+		width: 100% 
+		border: none 
+	textarea
+		height: 100px 
+		padding: 15px 15px
+		
+	input[type=submit]
+		font-size: 20px 
+		color: #8a040a 
+		text-transform: uppercase
+		appearance: none
+		border: none
+		background: none 
+		cursor: pointer
+	&__text
+		font-size: 12px 
+		color: #777777 
+		margin: 30px 0 
+		text-align: center
+		+r(620)
+			margin: 30px 15px 
+		p
+			margin-bottom: 1em 
+.contacts
+	max-width: 600px  
+	margin: 0 auto 
+	margin-bottom: 13px 
+	
+	.contacts__location
+		+r(620)
+			margin: 0 10px 
+		img
+			max-width: 100%
+	.contacts__map
+		border: 1px solid #bbbbbb 
+		padding: 5px 
+		img
+			max-width: 100% 
+	.contacts__text
+		text-align: center
+		font-size: 12px 
+		color: #777777 
+		padding: 14px 0 
+		strong
+			display: block
+	.h1
+		max-width: 1000px 
+.h1
+	margin-bottom: 47px 
+	font-size: 32px 
+	+font
+	text-transform: uppercase
+	text-align: center
+	color: #333 
+	padding-top: 10px 
+	font-weight: normal
+	overflow: hidden
+	max-width: 480px 
+	margin-left: auto 
+	margin-right: auto 
+	+r(600)
+		margin-bottom: 20px 
+	span
+		position: relative
+		&:before,&:after
+			content: ' '
+			+s(left)
+			right: 100% 
+			top: 0 
+			margin-right: 13px 
+			position: absolute
+		&:after
+			+s(right)
+			margin-left: 13px
+			margin-right: 0 
+			left: 100% 
+			right: auto
+	&.h1_nomargin
+		margin-bottom: 20px 
+	
+	 
+.backto
+	text-align: center
+	text-decoration: none
+	color: #000 
+	display: block
+	+r(600)
+		margin-top: 30px 
+	.backto__text
+		font-size: 14px 
+		color: #777777 
+		position: relative
+		top: 7px 
+		margin-right: 9px 
+		+r(600)
+			margin-right: 0 
+.goods
+	margin: 40px 0 50px
+	position: relative
+	&:before,&:after
+		content: "" 
+		position: absolute
+		left: 33%
+		height: 100%
+		bottom: 0 
+		top: 0 
+		border-left: 1px solid #ddd   
+	&:after
+		left: 66% 
+	+r(660)
+		&:after,&:before
+			display: none
+
+.good
+	display: inline-block
+	width: 33%
+	text-align: center
+	text-decoration: none
+	+r(660)
+		width: auto
+		display: block
+		text-align: center
+		margin-bottom: 30px 
+	&__pic
+		// -webkit-box-reflect: below
+		margin-top: -17px 
+		
+	&__title
+		font-size: 18px 
+		text-transform: uppercase
+		color: #000000 
+		text-decoration: none
+		font-weight: normal
+		margin-bottom: 12px 
+		 
+	&__price
+		font-size: 14px
+		color: #777777 
+.promo
+	position: relative
+	font-size: 12px 
+	color: #777777 
+	overflow: hidden
+	text-align: center
+	+clr
+	&__content
+		width: 200px 
+		position: absolute
+		right: 20px 
+		bottom: 70px 
+	.promo__img
+		text-align: right
+		img
+			float: right
+		// img
+		// 	max-width: 100% 
+		// 	display: block
+	&__title
+		font-size: 24px
+		line-height: 28px
+		color: #555555  
+		+font
+		text-transform: uppercase
+		margin-bottom: 11px 
+	&__more
+		font-size: 18px 
+		text-transform: uppercase
+		color: #545454
+		+font 
+		margin-top: 88px 
+		display: block
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+.socials
+	a
+		display: inline-block
+		+hidetext
+		opacity: .3
+		margin-left: 22px 
+		&:hover
+			opacity: 1
+	@each $s in fb, in, pi
+		.socials__#{$s}
+			+s(icon-#{$s})
+	&.socials_header
+		position: absolute
+		top: 76px 
+		right: 10px
+		text-align: right
+		+r(720)
+			top: 35px 
+		+r(444)
+			top: 60px 
+	&__text
+		text-align: center
+		text-transform: uppercase
+		color: #fff 
+		font-size: 14px
+		padding-top: 7px 
+		+r(720)
+			color: #000 
+	&.socials_footer
+		display: inline-block
+		white-space: nowrap
+		text-align: right
+		padding-right: 4px 
+		padding-top: 15px 
+		+r(720)
+			display: block
+			text-align: center
+			margin-bottom: 10px 
+			padding-top: 0
+			color: #000  
+			@each $s in fb, in, pi
+				.socials__#{$s}
+					+s(icon-#{$s})
+		a
+			opacity: 1 
+			margin: 0 11px 
+		@each $s in fb, in, pi
+			.socials__#{$s}
+				+s(iconbig-#{$s})
