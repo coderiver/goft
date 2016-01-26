@@ -3,15 +3,15 @@
 	position: relative
 	margin-bottom: 28px 
 	+r(720)
-		background: none 
-		&:before
-			position: absolute
-			top: 0
-			left: 0
-			content: "" 
-			width: 100%
-			background: #dddddd    
-			height: 26px 
+		// background: none 
+		// &:before
+		// 	position: absolute
+		// 	top: 0
+		// 	left: 0
+		// 	content: "" 
+		// 	width: 100%
+		// 	background: #dddddd    
+		// 	height: 26px 
 	+r(444)
 		&:before
 			display: none
@@ -35,6 +35,8 @@
 		height: 26px 
 		line-height: 26px 
 		left: 10px
+		+r(720)
+			display: none
 		+r(444) 
 			position: static
 			text-align: center
@@ -56,36 +58,41 @@
 			height: auto
 	&__logo
 		+s(logo)
+		background: url(../img/logo-top.svg) no-repeat 0 0
+		background-size: contain 
 		+hidetext
 		display: inline-block
 		vertical-align: top
 		margin-top: 33px 
-		+r(720)
-			display: none
+		// +r(720)
+		// 	display: none
 			
 	&__sublogo
 		text-align: center
 		overflow: hidden
 		margin-top: 13px 
 		+r(720)
-			margin-top: 0
-			padding-top: 40px  
-			text-align: left
+			// margin-top: 0
+			// padding-top: 40px  
+			// text-align: left
 		+r(444)
-			padding-top: 15px 
+			// padding-top: 15px
+			padding-bottom: 25px  
 		.header__goft
 			+s(goft)
+			background: url(../img/logo-bot.svg) no-repeat 0 0
+			background-size: contain 
 			display: inline-block
 			margin: 0 27px
 			vertical-align: top
-			+r(720)
-				margin: 0 15px 
+			// +r(720)
+			// 	margin: 0 15px 
 		&left
 			+s(logo-left)
 			display: inline-block
 			position: relative
-			+r(720)	
-				display: none
+			// +r(720)	
+			// 	display: none
 			&:before
 				content: ""
 				position: absolute
@@ -98,8 +105,8 @@
 			+s(logo-right)
 			display: inline-block
 			position: relative
-			+r(720)
-				display: none
+			// +r(720)
+			// 	display: none
 			&:before
 				content: ""
 				position: absolute

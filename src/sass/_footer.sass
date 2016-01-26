@@ -20,7 +20,7 @@
 		min-height: 134px 
 		position: relative
 		+r(720)
-			background: #ddd 
+			background: #ddd url(../img/footer-bg1.png) no-repeat 50% 0%
 			padding: 15px 
 			text-align: center
 	&__left
@@ -79,7 +79,12 @@
 		left: 50%
 		transform: translate(-50%,0)   
 		+s(logo)
+		background: url(../img/logo-top.svg) no-repeat 50% 0
+		background-size: contain 
+		
 		+r(720)
 			position: static
 			transform: none
 			margin: 0 auto 
+			margin-bottom: 30px 
+			height: 71px 

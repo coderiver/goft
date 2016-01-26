@@ -256,14 +256,16 @@ body
 .socials
 	a
 		display: inline-block
-		+hidetext
+		// +hidetext
 		opacity: .3
 		margin-left: 22px 
+		color: #000 
+		font-size: 20px 
 		&:hover
 			opacity: 1
-	@each $s in fb, in, pi
-		.socials__#{$s}
-			+s(icon-#{$s})
+	// @each $s in fb, in, pi
+	// 	.socials__#{$s}
+	// 		+s(icon-#{$s})
 	&.socials_header
 		position: absolute
 		top: 76px 
@@ -273,32 +275,43 @@ body
 			top: 35px 
 		+r(444)
 			top: 60px 
+			display: none
 	&__text
 		text-align: center
 		text-transform: uppercase
 		color: #fff 
 		font-size: 14px
-		padding-top: 7px 
+		padding-top: 0px 
 		+r(720)
 			color: #000 
+			display: none
 	&.socials_footer
 		display: inline-block
 		white-space: nowrap
 		text-align: right
 		padding-right: 4px 
 		padding-top: 15px 
+		font-size: 30px 
+		color: #fff 
 		+r(720)
 			display: block
 			text-align: center
 			margin-bottom: 10px 
 			padding-top: 0
-			color: #000  
-			@each $s in fb, in, pi
-				.socials__#{$s}
-					+s(icon-#{$s})
+			color: #000 
+			margin-top: 20px 
+			a
+				color: #000 
+			// @each $s in fb, in, pi
+			// 	.socials__#{$s}
+			// 		+s(icon-#{$s})
 		a
 			opacity: 1 
 			margin: 0 11px 
-		@each $s in fb, in, pi
-			.socials__#{$s}
-				+s(iconbig-#{$s})
+			color: #fff 
+			font-size: 35px 
+			&:hover
+				color: #000 
+		// @each $s in fb, in, pi
+		// 	.socials__#{$s}
+		// 		+s(iconbig-#{$s})
