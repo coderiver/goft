@@ -35,7 +35,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-insta:before { content: ""; }
 
-@font-face { font-family: engr; src: url("fonts/engr.eot"); src: url("fonts/engr.eot?#iefix") format("embedded-opentype"), url("fonts/engr.woff2") format("woff2"), url("fonts/engr.woff") format("woff"), url("fonts/engr.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: engr; src: url("fonts/engr.eot"); src: url("fonts/engr.eot?#iefix") format("embedded-opentype"), url("fonts/engr.woff") format("woff"), url("fonts/engr.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 body { font-family: "Myriad Pro", Arial, sans-serif; font-size: 14px; line-height: 1.3; }
 
 .out { max-width: 940px; margin: 0 auto; }
