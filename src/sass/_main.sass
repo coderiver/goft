@@ -2,6 +2,8 @@
 +font(engr, engr)
 =font
 	font-family: "engr", Arial, sans-serif
+html, body
+	height: 100%
 body
 	font-family: "Myriad Pro",Arial, sans-serif
 	font-size: 14px
@@ -9,6 +11,12 @@ body
 .out
 	max-width: 940px  
 	margin: 0 auto 
+	min-height: 100%
+	margin-bottom: -178px
+	&:after
+		content: ' '
+		display: block
+		height: 178px
 .text
 	margin: 0 167px
 	font-size: 12px 
