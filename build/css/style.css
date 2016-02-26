@@ -150,6 +150,12 @@ body { font-family: "Myriad Pro", Arial, sans-serif; font-size: 14px; line-heigh
 .gallery { text-align: center; }
 .gallery__thumbs { margin-top: 30px; }
 .gallery__thumbs > div { width: 60px; height: 60px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; border: 1px solid #bbb; margin-right: 14px; display: inline-block; cursor: pointer; }
+
+.subdirectory { width: 100%; max-width: 940px; margin: auto; font-size: 0; text-align: center; margin-bottom: 40px; }
+.subdirectory li { display: inline-block; vertical-align: middle; }
+.subdirectory a { text-decoration: none; font: 12px "Myriad Pro", Arial, sans-serif; color: #565656; text-transform: uppercase; display: inline-block; vertical-align: middle; padding: 0 7px; }
+.subdirectory a:hover { text-decoration: underline; color: #993236; }
+.subdirectory span { font: 18px/1 "Myriad Pro", Arial, sans-serif; display: inline-block; vertical-align: middle; }
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px){
  *{ -webkit-text-size-adjust: none; } }
 @media only screen and (max-width: 940px){
