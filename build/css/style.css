@@ -33,7 +33,7 @@ html { -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 .icon-twitter:before { content: ""; }
 
-@font-face { font-family: engr; src: url("fonts/engr.eot"); src: url("fonts/engr.eot?#iefix") format("embedded-opentype"), url("fonts/engr.woff2") format("woff2"), url("fonts/engr.woff") format("woff"), url("fonts/engr.ttf") format("truetype"); font-weight: normal; font-style: normal; }
+@font-face { font-family: engr; src: url("fonts/AcademyEngravedLetPlain-Plain.eot"); src: url("fonts/AcademyEngravedLetPlain-Plain.eot?#iefix") format("embedded-opentype"), url("fonts/AcademyEngravedLetPlain-Plain.woff2") format("woff2"), url("fonts/AcademyEngravedLetPlain-Plain.woff") format("woff"), url("fonts/AcademyEngravedLetPlain-Plain.ttf") format("truetype"); font-weight: normal; font-style: normal; }
 html, body { height: 100%; }
 
 body { font-family: "Myriad Pro", Arial, sans-serif; font-size: 14px; line-height: 1.3; }
