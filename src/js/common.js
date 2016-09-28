@@ -5,4 +5,10 @@ $(document).ready(function() {
 		newlink = $(this).data('pic');
 		$('.gallery__main img').attr('src',newlink);
 	});
+
+	$('.js-gallery-thumbs').slick({
+		infinite: true,
+		slidesToShow: 10,
+		slidesToScroll: 1
+	});
 });

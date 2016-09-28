@@ -148,8 +148,7 @@ body { font-family: "Myriad Pro", Arial, sans-serif; font-size: 14px; line-heigh
 .single__action { float: right; text-decoration: none; color: #8a040a; font-size: 20px; margin-right: 8px; }
 
 .gallery { text-align: center; }
-.gallery__thumbs { margin-top: 30px; }
-.gallery__thumbs > div { width: 60px; height: 60px; background-size: contain; background-position: 50% 50%; background-repeat: no-repeat; border: 1px solid #bbb; margin-right: 14px; display: inline-block; cursor: pointer; }
+.gallery__thumbs { margin-top: 30px; text-align: left; }
 
 .subdirectory { width: 100%; max-width: 940px; margin: auto; font-size: 0; text-align: center; margin-bottom: 40px; }
 .subdirectory li { display: inline-block; vertical-align: middle; }

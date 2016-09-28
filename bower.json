@@ -1,0 +1,19 @@
+{
+  "name": "Coderiver-Project",
+  "description": "Riverco.de gulp template",
+  "main": "",
+  "authors": [
+    "Coderiver <html@coderiver.com.ua>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/coderiver/goft",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "build/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
