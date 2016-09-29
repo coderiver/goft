@@ -15,7 +15,7 @@
 	//=include partials/header.html  
 
 	<!-- begin page  -->
-	<main class="page">
+	<div class="page">
 
 		<h1 class="h1"><span>JEWELRY</span></h1>
 		<!-- begin single  -->
@@ -23,30 +23,28 @@
 			<div class="single__left">
 				<div class="gallery">
 					<div class="gallery__main js-gallery-main">
-						<!-- <img src="img/good.png" alt=""> -->
-
+						<div class="g-slide"><img src="img/good.png" alt=""></div>
+						<div class="g-slide"><img src="img/thumb.jpg" alt=""></div>
+						<div class="g-slide"><img src="img/good.png" alt=""></div>
+						<div class="g-slide"><img src="img/thumb.jpg" alt=""></div>
+						<div class="g-slide"><img src="img/good.png" alt=""></div>
+						<div class="g-slide"><img src="img/thumb.jpg" alt=""></div>
+						<div class="g-slide"><img src="img/good.png" alt=""></div>
+						<div class="g-slide"><img src="img/thumb.jpg" alt=""></div>
+						<div class="g-slide"><img src="img/good.png" alt=""></div>
+						<div class="g-slide"><img src="img/thumb.jpg" alt=""></div>
 					</div>
-					<div class="gallery__thumbs js-gallery-thumbs">
-						<!-- <div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/thumb.jpg" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/thumb.jpg" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div>
-						<div data-pic="img/good.png" style="background-image:url(img/thumb.jpg)" alt=""></div> -->
-						<div><img src="img/good.png" alt=""></div>
-						<div><img src="img/thumb.jpg" alt=""></div>
-						<div><img src="img/good.png" alt=""></div>
-						<div><img src="img/thumb.jpg" alt=""></div>
-						<div><img src="img/good.png" alt=""></div>
-						<div><img src="img/thumb.jpg" alt=""></div>
-						<div><img src="img/good.png" alt=""></div>
-						<div><img src="img/thumb.jpg" alt=""></div>
-						<div><img src="img/good.png" alt=""></div>
-						<div><img src="img/thumb.jpg" alt=""></div>
+					<div class="gallery__thumbs">
+						<div class="js-gallery-thumb"><img src="img/good.png" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/thumb.jpg" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/good.png" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/thumb.jpg" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/good.png" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/thumb.jpg" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/good.png" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/thumb.jpg" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/good.png" alt=""></div>
+						<div class="js-gallery-thumb"><img src="img/thumb.jpg" alt=""></div>
 					</div>
 				</div>
 				<!-- end gallery -->
@@ -83,11 +81,34 @@
 			<div class="h1"><span>Jewelry</span></div>
 		</a>
 		
+		<!-- BEGIN popup -->
+		<div class="popup js-gallery-modal">
+			<div class="popup__window">
+				<div class="popup__media js-gallery-large">
+				</div>
+				<div class="popup__footer">
+					<div class="popup__nav">
+						<button type="button" class="arrow arrow-left js-gallery-prev">
+							<i class="icon icon-arrow-left"></i>
+						</button>
+						<div class="popup__nav-index js-gallery-counter"></div>
+						<button type="button" class="arrow arrow-right js-gallery-next">
+							<i class="icon icon-arrow-right"></i>
+						</button>
+					</div>
+					<button type="button" class="btn-close js-close">
+						<i class="icon icon-close"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+		<!-- END popup -->
 
-	</main>
+	</div>
 	<!-- end page -->
 </div>
 <!-- END out-->
+
 //=include partials/footer.html  
 </body>
 </html>

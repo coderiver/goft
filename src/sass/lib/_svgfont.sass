@@ -5,10 +5,13 @@
 	font-weight: normal
 	font-style: normal
 
-$icon-facebook: "\EA01"
-$icon-insta: "\EA02"
-$icon-pi: "\EA03"
-$icon-twitter: "\EA06"
+$icon-arrow-left: "\EA01"
+$icon-arrow-right: "\EA02"
+$icon-close: "\EA03"
+$icon-facebook: "\EA04"
+$icon-insta: "\EA05"
+$icon-pi: "\EA06"
+$icon-twitter: "\EA07"
 
 
 %icon
@@ -25,6 +28,12 @@ $icon-twitter: "\EA06"
 	@extend %icon
 	display: inline-block
 
+.icon-arrow-left:before
+	content: $icon-arrow-left
+.icon-arrow-right:before
+	content: $icon-arrow-right
+.icon-close:before
+	content: $icon-close
 .icon-facebook:before
 	content: $icon-facebook
 .icon-insta:before

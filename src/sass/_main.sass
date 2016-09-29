@@ -325,3 +325,94 @@ body
 		// @each $s in fb, in, pi
 		// 	.socials__#{$s}
 		// 		+s(iconbig-#{$s})
+.page
+	position: relative
+.popup
+	position: absolute
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+	margin: auto
+	visibility: hidden
+	opacity: 0
+	overflow: hidden
+	z-index: 999
+	+vertical
+	&.is-open
+		visibility: visible
+		opacity: 1
+	&__window
+		display: inline-block
+		vertical-align: middle
+		width: 100%
+		background-color: #FFF 
+	&__media
+		border: 3px solid #dddddd
+		border-bottom: 0
+		position: relative
+		.g-slide
+			height: 580px
+			+vertical
+		img
+			max-width: 95%
+			max-height: 95%
+			display: inline-block
+			vertical-align: middle
+	&__footer
+		height: 40px
+		background-color: #DDD
+		position: relative
+	&__nav
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		margin: auto
+		width: 90px
+		.icon
+			color: #fff
+			font-size: 21px
+			display: inline-block
+			vertical-align: middle
+		.arrow
+			background-color: transparent
+			position: absolute
+			top: 0
+			bottom: 0
+			margin: auto
+			cursor: pointer
+			+vertical
+		.arrow-left
+			left: 0
+		.arrow-right
+			right: 0
+		&-index
+			text-align: center
+			font-size: 16px
+			color: black
+			line-height: 40px
+			position: absolute
+			left: 0
+			right: 0
+			bottom: 0
+			top: 0
+			margin: auto
+			padding: 0 21px
+.btn-close
+	cursor: pointer
+	color: #fff
+	+vertical
+	+tr(color 0.2s)
+	position: absolute
+	right: 12px
+	top: 0
+	bottom: 0
+	margin: auto
+	background-color: transparent 
+	&:hover
+		color: darken(#fff, 5%)
+	.icon
+		display: inline-block
+		vertical-align: middle
+		font-size: 21px
