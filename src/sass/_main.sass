@@ -375,6 +375,7 @@ body
 			font-size: 21px
 			display: inline-block
 			vertical-align: middle
+			+tr(color 0.1s)
 		.arrow
 			background-color: transparent
 			position: absolute
@@ -382,7 +383,17 @@ body
 			bottom: 0
 			margin: auto
 			cursor: pointer
+			z-index: 10
+			visibility: visible
+			opacity: 1
+			+tr(opacity 0.3s)
 			+vertical
+			&:hover
+				.icon
+					color: darken(#fff, 5%)
+			&.slick-disabled
+				opacity: 0
+				visibility: hidden
 		.arrow-left
 			left: 0
 		.arrow-right

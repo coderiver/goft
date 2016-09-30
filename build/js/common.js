@@ -14,6 +14,7 @@ $(document).ready(function() {
 		galleryLarge.html(clones);
 
 		galleryLarge.slick({
+			infinite: false,
 			prevArrow: '.js-gallery-prev',
 			nextArrow: '.js-gallery-next',
 			fade: true

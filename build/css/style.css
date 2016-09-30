@@ -154,9 +154,11 @@ body { font-family: "Myriad Pro", Arial, sans-serif; font-size: 14px; line-heigh
 .popup__media img { max-width: 95%; max-height: 95%; display: inline-block; vertical-align: middle; }
 .popup__footer { height: 40px; background-color: #DDD; position: relative; }
 .popup__nav { position: absolute; top: 0; bottom: 0; left: 0; margin: auto; width: 90px; }
-.popup__nav .icon { color: #fff; font-size: 21px; display: inline-block; vertical-align: middle; }
-.popup__nav .arrow { background-color: transparent; position: absolute; top: 0; bottom: 0; margin: auto; cursor: pointer; text-align: center; font-size: 0; }
+.popup__nav .icon { color: #fff; font-size: 21px; display: inline-block; vertical-align: middle; -webkit-transition: color 0.1s; transition: color 0.1s; }
+.popup__nav .arrow { background-color: transparent; position: absolute; top: 0; bottom: 0; margin: auto; cursor: pointer; z-index: 10; visibility: visible; opacity: 1; -webkit-transition: opacity 0.3s; transition: opacity 0.3s; text-align: center; font-size: 0; }
 .popup__nav .arrow:before { content: ""; display: inline-block; vertical-align: middle; width: 0; height: 100%; }
+.popup__nav .arrow:hover .icon { color: #f2f2f2; }
+.popup__nav .arrow.slick-disabled { opacity: 0; visibility: hidden; }
 .popup__nav .arrow-left { left: 0; }
 .popup__nav .arrow-right { right: 0; }
 .popup__nav-index { text-align: center; font-size: 16px; color: black; line-height: 40px; position: absolute; left: 0; right: 0; bottom: 0; top: 0; margin: auto; padding: 0 21px; }
