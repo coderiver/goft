@@ -10,6 +10,8 @@ body
 	font-family: "Myriad Pro",Arial, sans-serif
 	font-size: 14px
 	line-height: 1.3
+	&.is-hidden
+		overflow: hidden
 .out
 	max-width: 940px  
 	margin: 0 auto 
@@ -325,10 +327,8 @@ body
 		// @each $s in fb, in, pi
 		// 	.socials__#{$s}
 		// 		+s(iconbig-#{$s})
-.page
-	position: relative
 .popup
-	position: absolute
+	position: fixed
 	top: 0
 	right: 0
 	bottom: 0
@@ -336,7 +336,8 @@ body
 	margin: auto
 	visibility: hidden
 	opacity: 0
-	overflow: hidden
+	overflow-x: hidden
+	overflow-y: auto
 	z-index: 999
 	+vertical
 	&.is-open
@@ -345,6 +346,7 @@ body
 	&__window
 		display: inline-block
 		vertical-align: middle
+		max-width: 940px
 		width: 100%
 		background-color: #FFF 
 	&__media

@@ -30,7 +30,8 @@ $(document).ready(function() {
 		galleryModal = $('.js-gallery-modal'),
 		galleryLarge = $('.js-gallery-large'),
 		galleryCounter = $('.js-gallery-counter'),
-		buttonClose = $('.js-close');
+		buttonClose = $('.js-close'),
+		body = $('body');
 
 	if (galleryModal.length) {
 		var clones = gallery.html();
@@ -72,12 +73,14 @@ $(document).ready(function() {
 
 		if(!galleryModal.hasClass('is-open')) {
 			galleryModal.addClass('is-open');
+			body.addClass('is-hidden');
 		}
 
 	});
 
 	buttonClose.click(function() {
 		galleryModal.removeClass('is-open');
+		body.removeClass('is-hidden');
 	})
 
 });
