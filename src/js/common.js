@@ -7,12 +7,16 @@ $(document).ready(function() {
 		galleryLarge = $('.js-gallery-large'),
 		galleryCounter = $('.js-gallery-counter'),
 		buttonClose = $('.js-close'),
-		body = $('body');
+		body = $('body'),
+		len = gallerySlide.length;
 
 	if (galleryModal.length) {
 		var clones = gallery.html();
 
 		galleryLarge.html(clones);
+
+		if(len == 1) galleryModal.find('.popup__nav').addClass('is-hidden');
+		else galleryModal.find('.popup__nav').removeClass('is-hidden');
 
 		galleryLarge.slick({
 			infinite: false,
@@ -24,8 +28,6 @@ $(document).ready(function() {
 		galleryLarge.on('beforeChange', function(e, slick, current, next) {
 			galleryCounter.text(next + 1);
 		});
-
-		// galleryLarge.slick('slickGoTo', index);
 	}
 
 	gallery.slick({
@@ -58,5 +60,4 @@ $(document).ready(function() {
 		galleryModal.removeClass('is-open');
 		body.removeClass('is-hidden');
 	})
-
 });
